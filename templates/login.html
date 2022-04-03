@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../static/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div class="login">
+        <div class="form">
+            <form class="login-form" action="/login" method="POST">
+                <span class="material-icons"></span>
+                <input type="text" placeholder="Username" name="username" required/>
+                <input type="password" name="password" placeholder="password" required />
+                
+                
+                <p>Please select your Role:</p>
+                <input type="radio" id="AI" name="role" value="AI">
+                <label for="AI">AI Developer</label>
+                <input type="radio" id="Deployer" name="role" value="Deployer">
+                <label for="Deployer">Deployer</label>
+                <input type="radio" id="Admin" name="role" value="Admin">
+                <label for="Admin">Admin</label>
+                <input type="radio" id="App" name="role" value="App">
+                <label for="App">App Developer</label>
+                <br><br>
+                <button type="submit">login</button>
+            </form>  
+            
+            <br>
+            <br>
+            <form action="/signup" method="GET">
+                <button class = "gfg" type="submit">
+                    Signup
+                </button>
+            </form>
+
+           
+        </div>
+      </div>
+
+
+        
+
+</body>
+</html>
+
+
+
+
+<!-- 
+
+<form action="" method="post">  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <button type="submit">SignUp</button>
+    </div>
+  </form> -->
